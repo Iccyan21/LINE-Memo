@@ -11,7 +11,8 @@ import SwiftUI
 struct LINE_MemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RoomListView()
+                .modelContainer(for: [Room.self,Memo.self])
         }
     }
 }
